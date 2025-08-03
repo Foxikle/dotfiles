@@ -26,12 +26,12 @@
     ],
     
     "include": [
-        "~/.config/HyprV/waybar/conf/mesu.jsonc"
+        "~/.config/waybar/mesu.jsonc"
     ],
 
     "custom/launch_wofi": {
         "format": "",
-        "on-click": "pkill wofi || wofi -n -c ~/.config/HyprV/wofi/config-bmenu",
+        "on-click": "pkill wofi || wofi -n -c ~/.config/wofi/config-bmenu",
         "tooltip": false
     },
 
@@ -105,10 +105,10 @@
     "pulseaudio": {
         "format": "{icon}",
         "format-muted": "",
-        "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
+        "on-click": "~/.config/waybar/scripts/volume --toggle", 
         "on-click-right": "pavucontrol",
-        "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --inc",
-        "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --dec",
+        "on-scroll-up": "~/.config/waybar/scripts/volume --inc",
+        "on-scroll-down": "~/.config/waybar/scripts/volume --dec",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
@@ -127,10 +127,10 @@
         "format": "{format_source}",
         "format-source": "",
         "format-source-muted": "",
-        "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle-mic",
+        "on-click": "~/.config/waybar/scripts/volume --toggle-mic",
         "on-click-right": "pavucontrol",
-        "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --mic-inc",
-        "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --mic-dec",
+        "on-scroll-up": "~/.config/waybar/scripts/volume --mic-inc",
+        "on-scroll-down": "~/.config/waybar/scripts/volume --mic-dec",
         "scroll-step": 5,
         "tooltip": true,
         "tooltip-format": " at {volume}%"
@@ -143,8 +143,8 @@
 
     "custom/updates": {
         "format": "{}",
-        "exec": "~/.config/HyprV/waybar/scripts/update-sys",
-        "on-click": "~/.config/HyprV/waybar/scripts/update-sys update",
+        "exec": "~/.config/waybar/scripts/update-sys",
+        "on-click": "~/.config/waybar/scripts/update-sys update",
         "interval": 300,
         "tooltip": true
     }
