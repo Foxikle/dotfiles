@@ -18,6 +18,10 @@ mkdir -p <name of application(s)>/.config/<folder where configs are -- omit if n
 ```
 The `.config` folder can be changed if the configs are in a different place. (ie `.local/share` or something).
 
-
+> [!NOTE]
+> In order for waybar's update and volume controls to work, you must run the following command:
+> ```
+  chmod +x waybar/.config/waybar/scripts/*
+> ```
 
 
