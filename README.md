@@ -20,7 +20,7 @@ The `.config` folder can be changed if the configs are in a different place. (ie
 
 > [!NOTE]
 > In order for waybar's update and volume controls to work, you must run the following command:
-> ```
+> ```sh
 >  chmod +x waybar/.config/waybar/scripts/*
 > ```
 
