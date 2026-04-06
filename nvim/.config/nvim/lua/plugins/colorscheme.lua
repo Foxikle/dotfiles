@@ -4,7 +4,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      vim.g.everforest_background = "hard" -- or "medium" / "hard"
+      vim.g.everforest_background = "medium" -- or "medium" / "hard"
       vim.cmd("colorscheme everforest")
     end,
   },

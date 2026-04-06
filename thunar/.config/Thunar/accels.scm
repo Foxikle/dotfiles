@@ -106,6 +106,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-statusbar" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/open-location" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/duplicate" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/52301b271e6466c9a3f4d7879d7e195d" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/trash-delete-2" "KP_Delete")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/back-alt1" "BackSpace")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
