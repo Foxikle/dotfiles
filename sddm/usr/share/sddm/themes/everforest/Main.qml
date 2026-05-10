@@ -79,6 +79,7 @@ Pane {
             anchors.bottomMargin: root.height * 0.06
             width: Math.max(root.width * 0.28, 600)
             z: 2
+            focus: true
         }
     }
 }

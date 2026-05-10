@@ -7,7 +7,8 @@ import QtQuick.Controls 2.15
 import QtGraphicalEffects 1.0
 
 Column {
-    id: inputContainer
+  id: inputContainer
+  focus: true
     spacing: root.font.pointSize * 0.3
     Layout.fillWidth: true
 
