@@ -1,0 +1,9 @@
+[SddmGreeterTheme]
+Name=Foxgrove
+Description=A misty forest SDDM greeter. Aurora clock, frosted-glass card, Cinzel typography.
+Author=Foxikle (redesign) / Marian Arlt (original Sugar Candy base)
+Screenshot=preview.png
+Version=1.0
+License=GPL-3.0+
+MainScript=Main.qml
+ConfigFile=theme.conf
