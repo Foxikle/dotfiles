@@ -24,6 +24,7 @@ else
   echo "Done installing packages!"
 fi
 
+# Use stow to apply configs (separate script to promote reusability)
 ./update.sh
 
 echo "Done!"
