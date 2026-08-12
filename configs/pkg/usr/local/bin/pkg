@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PKGFILE="$HOME/packages.txt"
+
+yay "$@"
+yay -Qqe | sort > "$PKGFILE"
+echo "Updated $PKGFILE"
+

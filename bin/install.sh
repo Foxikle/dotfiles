@@ -24,28 +24,6 @@ else
   echo "Done installing packages!"
 fi
 
-echo "Applying config files!"
-for CONFIG in "$DOTFILES/configs"/*; do
-  [ -d "$CONFIG" ] || continue
-  CONFIG_NAME="$(basename "$CONFIG")"
-
-  # SDDM is handled separtely
-  [ "$CONFIG_NAME" = "sddm" ] && continue
-
-  stow --dir="$DOTFILES/configs" --target="$HOME" "$CONFIG_NAME"
-done
-
-echo "Applying bash configs"
-stow --dotfiles --dir="$DOTFILES" --target="$HOME" bash
-
-echo "Applying sddm configs"
-sudo stow --dir="$DOTFILES/configs" --target="/" sddm
-sudo chmod o+x /home/$USER
-sudo chmod o+x /home/$USER/dotfiles
-sudo chmod o+x /home/$USER/dotfiles/configs
-sudo chmod o+x /home/$USER/dotfiles/configs/sddm
-
-echo "Patching waybar scripts"
-chmod +x -R "$DOTFILES/configs/waybar/.config/waybar/scripts/"
+./update.sh
 
 echo "Done!"
