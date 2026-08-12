@@ -3,19 +3,13 @@
 Foxikle's personal dotfiles. These might change a lot. Or a little, who knows!
 
 For my future reference:
-To apply these configurations to the `~/.config/` directory, use the
+To apply these configurations, use the `bin/install.sh` script. 
+You can pass the `--skip-deps` flag to bypass installing packages
 
-```bash
-stow <option>
-```
+You can run the install script as you update the files. Use the `bin/update.sh` script to only update the loaded configurations.
 
-command. For example,
 
-```bash
-stow hyprland
-```
-
-will apply the hyprland setup to the config directory. To add a new configuration to the dotfiles, simply create a directory in this repository with the following naming conventions:
+To add a new configuration to the dotfiles, simply create a directory in this repository with the following naming conventions:
 
 ```
 mkdir -p <name of application(s)>/.config/<folder where configs are -- omit if n/a>
@@ -27,7 +21,7 @@ The `.config` folder can be changed if the configs are in a different place. (ie
 > In order for waybar's update and volume controls to work, you must run the following command:
 >
 > ```sh
->  chmod +x waybar/.config/waybar/scripts/*
+>  chmod +x -R configs/waybar/.config/waybar/scripts/
 > ```
 
 > [!NOTE]
@@ -38,5 +32,5 @@ The `.config` folder can be changed if the configs are in a different place. (ie
 > sudo stow -t / sddm
 > sudo chmod o+x /home/$USER
 > sudo chmod o+x /home/$USER/dotfiles
-> sudo chmod o+x /home/$USER/dotfiles/sddm
+> sudo chmod o+x /home/$USER/dotfiles/configs/sddm
 > ```
