@@ -25,6 +25,7 @@ else
 fi
 
 # Use stow to apply configs (separate script to promote reusability)
-./update.sh
+dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd"
+"$dir/update.sh"
 
 echo "Done!"

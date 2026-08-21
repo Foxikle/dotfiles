@@ -3,12 +3,9 @@ amd-vulkan-prefixes
 archlinux-java-run
 argon2
 arrpc
-aseprite
-audacity
 base
 base-devel
 bind
-blockbench
 blueman
 bluez
 bluez-utils
@@ -18,7 +15,6 @@ brightnessctl
 btop
 cava
 cfitsio
-chunky-launcher
 clang
 clang20
 clang21
